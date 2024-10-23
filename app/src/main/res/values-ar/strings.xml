@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Greeting">اهلا بك.</string>
+    <string name="switch_language">تغير لغه التطبيق.</string>
+    <string name="arabic">" العربية"</string>
+    <string name="english">الإنجليزية</string>
+    <string name="upcoming">القادمة</string>
+    <string name="popular">الشائعة</string>
+    <string name="language">"اللغة: "</string>
+    <string name="release_date">"موعد النشر: "</string>
+    <string name="votes">"الاصوات "</string>
+    <string name="overview">ملخص</string>
+</resources>
