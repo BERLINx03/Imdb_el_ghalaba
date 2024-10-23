@@ -14,5 +14,5 @@
 
 ![Popular Movies](app/sampledata/lightmode_en.png)
 ![Arabic](app/sampledata/lightmode_ar.png)
-![Deatils_Screen](app/sampledata/detailscreen.png)
+![Deatils_Screen](app/sampledata/img.png)
 ![Dark Mode](app/sampledata/darkmode.png)
