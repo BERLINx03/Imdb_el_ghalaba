@@ -1,10 +1,24 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
 }
+
+val properties = Properties()
+
+properties.load(project.rootProject.file("local.properties").inputStream())
+
+
+val apiKey: String = properties.getProperty("apiKey") ?: ""
 android {
+
+    buildFeatures {
+        buildConfig = true
+    }
+
     namespace = "com.example.moviesapp"
     compileSdk = 34
 
@@ -19,7 +33,11 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        buildConfigField("String", "apiKey", "\"$apiKey\"")
     }
+
+
 
     buildTypes {
         release {
